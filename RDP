@@ -23,6 +23,3 @@ sudo apt install nautilus nano -y
 clear
 
 echo -e "${w}  Visit: https://remotedesktop.google.com/headless"
-read -p "   Command: " cmnd;
-"""${cmnd}"""
-echo -e "\n${g}[+] ${w}Selesai silahkan buka Aplikasi/Website Chrome Remote Desktop"

@@ -13,11 +13,12 @@ else
     sudo apt install --assume-yes --fix-broken
 fi
 DEBIAN_FRONTEND=noninteractive
-apt install --assume-yes xfce4 desktop-base
-sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session'
+sudo apt install mate-desktop-environment
+sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/mate-session" > /etc/chrome-remote-desktop-session'
 sudo apt install --assume-yes xscreensaver
 sudo apt install --assume-yes --fix-broken
-sudo apt install --asume-yes firefox-esr
+sudo apt install firefox-esr
+sudo apt install obs-studio
 sudo systemctl disable lightdm.service
 sudo apt install nautilus nano -y
 clear

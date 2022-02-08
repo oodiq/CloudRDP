@@ -18,7 +18,7 @@ sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/mate-session" > /etc/chrome-
 sudo apt install --assume-yes xscreensaver
 sudo apt install --assume-yes --fix-broken
 sudo apt install firefox-esr
-sudo apt install obs-studio
+
 sudo systemctl disable lightdm.service
 sudo apt install nautilus nano -y
 clear

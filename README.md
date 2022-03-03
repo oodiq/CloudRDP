@@ -1,6 +1,8 @@
 Installation
 ----
-```console  
+```console
+sudo apt-get update
+sudo apt-get dist-upgrade  
 git clone https://github.com/oodiq/CloudRDP
 ```
 Usage

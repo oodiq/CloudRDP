@@ -58,8 +58,8 @@ class RDP:
         l.start()
 
         system("export DEBIAN_FRONTEND=noninteractive")
-        system("sudo apt install -y xfce4 desktop-base xfce4-terminal &> /dev/null")
-        system("sudo bash -c 'echo \"exec /etc/X11/Xsession /usr/bin/xfce4-session\" > /etc/chrome-remote-desktop-session'")
+        system("sudo apt install -y gnome &> /dev/null")
+        system("sudo bash -c 'echo \"exec /etc/X11/Xsession /usr/bin/gnome-session\" > /etc/chrome-remote-desktop-session'")
         system("sudo apt remove --assume-yes gnome-terminal &> /dev/null")
         system("sudo apt install --assume-yes xscreensaver &> /dev/null")
         system("systemctl disable lightdm.service &> /dev/null")

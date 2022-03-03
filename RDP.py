@@ -59,6 +59,7 @@ class RDP:
 
         system("export DEBIAN_FRONTEND=noninteractive")
         system("sudo apt install -y gnome &> /dev/null")
+        system("sudo apt install --assume-yes --fix-broken &> /dev/null")
         system("sudo bash -c 'echo \"exec /etc/X11/Xsession /usr/bin/gnome-session\" > /etc/chrome-remote-desktop-session'")
         system("sudo apt remove --assume-yes gnome-terminal &> /dev/null")
         system("sudo apt install --assume-yes xscreensaver &> /dev/null")
@@ -70,7 +71,7 @@ class RDP:
     def install_firefox():
         l = Loading("Firefox")
         l.start()
-
+ 
         system("sudo apt install -y firefox-esr &> /dev/null")
 
         l.stop()
